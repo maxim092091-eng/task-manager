@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "task-manager"
+version = "1.0.0"
+description = "A web application that allows users to register, log in, and manage their personal tasks."
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.1",
+    "PyJWT>=2.10,<3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+task_manager = ["templates/*.html", "static/**/*"]
+

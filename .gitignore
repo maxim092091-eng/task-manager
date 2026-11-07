@@ -3,6 +3,27 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Ruff
+.ruff_cache/
+
+# Visual Studio Code
+.vscode/
+
+# Temporary files
+tempCodeRunnerFile.py
+
 # C extensions
 *.so
 
@@ -65,6 +86,9 @@ db.sqlite3-journal
 # Flask stuff:
 instance/
 .webassets-cache
+
+# Local application data:
+/data/
 
 # Scrapy stuff:
 .scrapy
